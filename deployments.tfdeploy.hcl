@@ -14,3 +14,10 @@ deployment "production" {
     instances        = 3
   }
 }
+
+deployment "test" {
+  inputs = {
+    prefix           = "production"
+    instances        = 2
+  }
+}
